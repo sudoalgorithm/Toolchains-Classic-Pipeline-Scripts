@@ -19,3 +19,4 @@ if jq -e '.services[] | select(.service_id=="draservicebroker")' _toolchain.json
   ibmcloud doi publishbuildrecord --branch ${GIT_BRANCH} --repositoryurl ${GIT_URL} --commitid ${GIT_COMMIT} \
     --buildnumber ${BUILD_NUMBER} --logicalappname ${IMAGE_NAME} --status pass
 fi
+
